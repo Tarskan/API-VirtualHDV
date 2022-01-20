@@ -1,10 +1,7 @@
 package com.example.demo.typeProduct;
 
-import com.example.demo.product.Product;
-import com.example.demo.product.ProductRepository;
 import org.springframework.web.bind.annotation.*;
 
-import java.lang.reflect.Type;
 import java.util.List;
 
 @RestController

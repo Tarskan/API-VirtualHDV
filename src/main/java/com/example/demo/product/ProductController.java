@@ -1,6 +1,5 @@
 package com.example.demo.product;
 
-import com.example.demo.typeProduct.TypeProduct;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

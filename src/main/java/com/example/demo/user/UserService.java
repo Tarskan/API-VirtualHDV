@@ -1,6 +1,5 @@
 package com.example.demo.user;
 
-import com.example.demo.product.Product;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
