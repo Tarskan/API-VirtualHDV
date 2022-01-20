@@ -1,4 +1,4 @@
-## Trucks
+## TypeProduct
 
 Les typeProduct possèdent tous un id unique.
 

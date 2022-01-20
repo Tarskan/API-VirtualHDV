@@ -22,4 +22,6 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id_user;
     private String name;
+    private String pseudo;
+    private String password;
 }

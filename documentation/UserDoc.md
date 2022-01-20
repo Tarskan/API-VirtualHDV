@@ -7,7 +7,9 @@ Les user possèdent tous un id unique.
 ```json
 {
   "id_user": 1,
-  "name": "username"
+  "name": "Nom + prenom de l'utilisateur",
+  "pseudo": "Pseudo de l'utilisateur",
+  "password": "Mot de passe"
 }
 ```
 
@@ -33,7 +35,9 @@ Body :</br>
 ```json
 {
     "id_user": 1,
-    "name": "Username"
+    "name": "Nom + prenom de l'utilisateur",
+    "pseudo": "Pseudo de l'utilisateur",
+    "password": "Mot de passe"
 }
 ```
 
@@ -44,7 +48,9 @@ Body:</br>
 //Pas besoin de mettre d'id il est générer automatiquement</br>
 ```json
 {
-    "name": "Username"
+  "name": "Nom + prenom de l'utilisateur",
+  "pseudo": "Pseudo de l'utilisateur",
+  "password": "Mot de passe"
 }
 ```
 
