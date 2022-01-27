@@ -14,18 +14,13 @@ public class UserController {
     }
 
     @GetMapping
-    public List<User> getListProduct(){
+    public List<User> getListUser(){
         return userService.getAllUser();
     }
 
-    @GetMapping("/{idProduct}")
-    public User getProductById(@PathVariable int idUser){
-        return userService.getUser(idUser);
-    }
-
-    @GetMapping("/search/{nameProduct}")
-    public List<User> getUserByName(@PathVariable String nameProduct){
-        return userService.getUserByName(nameProduct);
+    @GetMapping("/{id_user}")
+    public User getUserById(@PathVariable int id_user){
+        return userService.getUser(id_user);
     }
 
     @PutMapping

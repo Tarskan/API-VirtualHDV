@@ -1,4 +1,4 @@
-package com.example.demo.product;
+package com.example.demo.advertType;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
@@ -17,12 +17,9 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Product {
+public class Adverttype {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id_Product;
+    private int id_adverttype;
     private String name;
-    private String description;
-    private double prix;
-    private Integer id_typeProduct;
 }

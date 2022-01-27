@@ -1,4 +1,4 @@
-package com.example.demo.typeProduct;
+package com.example.demo.advert;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
@@ -6,10 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @JsonIgnoreProperties({"hibernateLazyInitializer"})
 @Getter
@@ -17,9 +14,13 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class TypeProduct {
+public class Advert {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id_TypeProduct;
+    private int id_advert;
     private String name;
+    private String description;
+    private double prix;
+    private Integer id_adverttype;
+    private Integer id_user;
 }

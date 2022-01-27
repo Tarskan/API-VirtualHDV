@@ -23,7 +23,7 @@ Pour récupérer un créneau dans la base :</br>
 method : **[GET]**</br>
 url : `localhost:8081/api/user/{idDuUserSouhaiter}`</br>
 
-Pour récupérer un typeProduct dans la base à partir de son attribut name(la recherche
+Pour récupérer un advertType dans la base à partir de son attribut name(la recherche
 partial est possible):</br>
 method : **[GET]**</br>
 url : `localhost:8081/api/user/{NameRechercher}`</br>

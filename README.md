@@ -1,7 +1,7 @@
 # API POUR LE PROJET ACLAB TRISTAN SIX
 
 Cette API gére trois choses, les users, 
-les TypeProduct ainsi que les product.
+les TypeProduct ainsi que les advert.
 Cette API a été créée pour un projet scolaire.
 ## SOMMAIRE
 ### LES USER

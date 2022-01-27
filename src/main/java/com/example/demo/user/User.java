@@ -21,7 +21,8 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id_user;
-    private String name;
+    private String first_name;
+    private String last_name;
     private String pseudo;
     private String password;
 }

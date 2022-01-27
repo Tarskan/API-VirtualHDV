@@ -1,53 +1,53 @@
 ## TypeProduct
 
-Les typeProduct possèdent tous un id unique.
+Les advertType possèdent tous un id unique.
 
-### Schéma de l'objet typeProduct
+### Schéma de l'objet advertType
 
 ```json
 {
   "id_typeProduct": 1,
-  "name": "Nom du typeProduct"
+  "name": "Nom du AdvertType"
 }
 ```
 
-### Les routes de l'API pour les typeProduct
+### Les routes de l'API pour les advertType
 
-Pour récupérer une liste des typeProduct dans la base.</br>
+Pour récupérer une liste des advertType dans la base.</br>
 method : **[GET]**</br>
-url : `localhost:8081/api/typeProduct</br>`
+url : `localhost:8081/api/advertType</br>`
 
-Pour récupérer un typeProduct dans la base.</br>
+Pour récupérer un advertType dans la base.</br>
 method : **[GET]**</br>
-url : `localhost:8081/api/typeProduct/{idDutypeProductSouhaiter}`</br>
+url : `localhost:8081/api/advertType/{idDutypeProductSouhaiter}`</br>
 
-Pour récupérer un typeProduct dans la base à partir de son attribut name(la recherche
+Pour récupérer un advertType dans la base à partir de son attribut name(la recherche
 partial est possible):</br>
 method : **[GET]**</br>
-url : `localhost:8081/api/typeProduct/{NameRechercher}`</br>
+url : `localhost:8081/api/advertType/{NameRechercher}`</br>
 
-Modifie intégralement un typeProduct, l'id est requis afin de savoir le quel modifier</br>
+Modifie intégralement un advertType, l'id est requis afin de savoir le quel modifier</br>
 method : **[PUT]** </br>
-url : `localhost:8081/api/typeProduct`</br>
+url : `localhost:8081/api/advertType`</br>
 Body:</br>
 ```json
 {
     "id_typeProduct": 1,
-    "name": "Nom du typeProduct"
+    "name": "Nom du AdvertType"
 }
 ```
 
-Pour ajouter un typeProduct dans la base.</br>
+Pour ajouter un advertType dans la base.</br>
 method : **[POST]**</br>
-url : `localhost:8081/api/typeProduct`</br>
+url : `localhost:8081/api/advertType`</br>
 Body:</br>
 //Pas besoin de mettre d'id il est générer automatiquement</br>
 ```json
 {
-  "name": "Nom du typeProduct"
+  "name": "Nom du AdvertType"
 }
 ```
 
-Pour supprimer un typeProduct de la base :</br>
+Pour supprimer un advertType de la base :</br>
 method : **[DELETE]**</br>
-url : `localhost:8081/api/typeProduct/{idDutypeProduct}`</br>
+url : `localhost:8081/api/advertType/{idDutypeProduct}`</br>

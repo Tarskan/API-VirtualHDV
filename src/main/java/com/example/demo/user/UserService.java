@@ -16,12 +16,8 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    public User getUser(int id_User) {
-        return userRepository.getById(id_User);
-    }
-
-    public List<User> getUserByName(String nameTypeProduct) {
-        return userRepository.findByNameContaining(nameTypeProduct);
+    public User getUser(int id_user) {
+        return userRepository.getById(id_user);
     }
 
     public User addUser(User user) {
