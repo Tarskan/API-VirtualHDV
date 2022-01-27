@@ -1,4 +1,4 @@
-## TypeProduct
+## AdvertType
 
 Les advertType possèdent tous un id unique.
 
@@ -6,7 +6,7 @@ Les advertType possèdent tous un id unique.
 
 ```json
 {
-  "id_typeProduct": 1,
+  "id_adverttype": 1,
   "name": "Nom du AdvertType"
 }
 ```
@@ -19,7 +19,7 @@ url : `localhost:8081/api/advertType</br>`
 
 Pour récupérer un advertType dans la base.</br>
 method : **[GET]**</br>
-url : `localhost:8081/api/advertType/{idDutypeProductSouhaiter}`</br>
+url : `localhost:8081/api/advertType/{idDuAdvertTypeSouhaiter}`</br>
 
 Pour récupérer un advertType dans la base à partir de son attribut name(la recherche
 partial est possible):</br>
@@ -32,7 +32,7 @@ url : `localhost:8081/api/advertType`</br>
 Body:</br>
 ```json
 {
-    "id_typeProduct": 1,
+    "id_adverttype": 1,
     "name": "Nom du AdvertType"
 }
 ```
@@ -50,4 +50,4 @@ Body:</br>
 
 Pour supprimer un advertType de la base :</br>
 method : **[DELETE]**</br>
-url : `localhost:8081/api/advertType/{idDutypeProduct}`</br>
+url : `localhost:8081/api/advertType/{idDuAdvertType}`</br>
