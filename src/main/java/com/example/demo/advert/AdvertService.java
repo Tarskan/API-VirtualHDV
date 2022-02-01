@@ -1,7 +1,10 @@
 package com.example.demo.advert;
 
+import com.example.demo.connexion.Connexion;
+import com.example.demo.user.User;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -18,6 +21,18 @@ public class AdvertService {
 
     public Advert getAdvert(int id_product) {
         return advertRepository.getById(id_product);
+    }
+
+    public List<Advert> getAdvertByIdUSer(int id_user) {
+        List<Advert> allAdvert = advertRepository.findAll();
+        List<Advert> list = new ArrayList<Advert>();
+
+        for(var i=0; i<allAdvert.size(); i++){
+            if (allAdvert.get(i).getId_user().equals(id_user)){
+                list.add(allAdvert.get(i));
+            }
+        }
+        return list;
     }
 
     public Advert addAdvert(Advert advert) {

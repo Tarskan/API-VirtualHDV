@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:8000", maxAge = 3600)
 @RestController
 @RequestMapping("/api/advert")
 public class AdvertController {
@@ -19,13 +20,18 @@ public class AdvertController {
     }
 
     @GetMapping("/{id_advert}")
-    public Advert getProductById(@PathVariable int id_advert){
-        return advertService.getAdvert(id_advert);
+    public Advert getAdvertById(@PathVariable int idAdvert){
+        return advertService.getAdvert(idAdvert);
     }
 
-    @PutMapping("/{id_advert}/typeProduct/{idTypeProduct}")
-    public Advert putTypeProductToTruck(@PathVariable int id_advert, @PathVariable int idTypeProduct) {
-        return advertService.putAdvertTypeToAdvert(id_advert, idTypeProduct);
+    @GetMapping("/search/{id_user}")
+    public List<Advert> getAdvertByIdUser(@PathVariable int id_user){
+        return advertService.getAdvertByIdUSer(id_user);
+    }
+
+    @PutMapping("/{id_advert}/typeProduct/{idAdvertType}")
+    public Advert putAdvertTypeToAdvert(@PathVariable int id_advert, @PathVariable int idAdvertType) {
+        return advertService.putAdvertTypeToAdvert(id_advert, idAdvertType);
     }
 
     @PutMapping
