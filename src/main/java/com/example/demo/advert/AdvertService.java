@@ -35,6 +35,10 @@ public class AdvertService {
         return list;
     }
 
+    public List<Advert> getAdvertByName(String nameAdvert) {
+        return advertRepository.findByNameContaining(nameAdvert);
+    }
+
     public Advert addAdvert(Advert advert) {
         if (advertRepository.existsById(advert.getId_advert())) {
             throw new IllegalArgumentException("Id " + advert.getId_advert() + " déja utilisé");

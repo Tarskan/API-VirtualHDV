@@ -24,9 +24,14 @@ public class AdvertController {
         return advertService.getAdvert(idAdvert);
     }
 
-    @GetMapping("/search/{id_user}")
+    @GetMapping("/search/idUser/{id_user}")
     public List<Advert> getAdvertByIdUser(@PathVariable int id_user){
         return advertService.getAdvertByIdUSer(id_user);
+    }
+
+    @GetMapping("/search/name/{nameAdvert}")
+    public List<Advert> getPositionByName(@PathVariable String nameAdvert){
+        return advertService.getAdvertByName(nameAdvert);
     }
 
     @PutMapping("/{id_advert}/typeProduct/{idAdvertType}")
