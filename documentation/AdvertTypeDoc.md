@@ -21,11 +21,6 @@ Pour récupérer un advertType dans la base.</br>
 method : **[GET]**</br>
 url : `localhost:8081/api/advertType/{idDuAdvertTypeSouhaiter}`</br>
 
-Pour récupérer un advertType dans la base à partir de son attribut name(la recherche
-partial est possible):</br>
-method : **[GET]**</br>
-url : `localhost:8081/api/advertType/{NameRechercher}`</br>
-
 Modifie intégralement un advertType, l'id est requis afin de savoir le quel modifier</br>
 method : **[PUT]** </br>
 url : `localhost:8081/api/advertType`</br>

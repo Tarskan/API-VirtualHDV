@@ -21,6 +21,8 @@ public class Advert {
     private String name;
     private String description;
     private double prix;
+    private String url;
     private Integer id_adverttype;
     private Integer id_user;
+    private Integer soldto;
 }

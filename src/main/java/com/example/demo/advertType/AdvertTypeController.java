@@ -19,9 +19,9 @@ public class AdvertTypeController {
         return advertTypeService.getAllAdvertType();
     }
 
-    @GetMapping("/{idTypeProduct}")
-    public Adverttype getTypeProductById(@PathVariable int idTypeProduct){
-        return advertTypeService.getAdvertTypeById(idTypeProduct);
+    @GetMapping("/{id_AdvertType}")
+    public Adverttype getTypeProductById(@PathVariable int id_AdvertType){
+        return advertTypeService.getAdvertTypeById(id_AdvertType);
     }
 
     @PutMapping

@@ -1,4 +1,4 @@
-package com.example.demo.user;
+package com.example.demo.tchat;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
@@ -17,16 +17,11 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class User {
+public class Tchat {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id_user;
-    private String first_name;
-    private String last_name;
-    private String adress;
-    private String city;
-    private String email;
-    private String pseudo;
-    private String password;
-    private String url;
+    private int id_tchat;
+    private Integer id_userone;
+    private Integer id_usertwo;
+    private Integer id_advert;
 }

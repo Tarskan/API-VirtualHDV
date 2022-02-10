@@ -16,8 +16,8 @@ public class AdvertTypeService {
         return advertTypeRepository.findAll();
     }
 
-    public Adverttype getAdvertTypeById(int id_adverType) {
-        return advertTypeRepository.getById(id_adverType);
+    public Adverttype getAdvertTypeById(int id_AdvertType) {
+        return advertTypeRepository.getById(id_AdvertType);
     }
 
     public Adverttype addAdvertType(Adverttype advertType) {
@@ -36,13 +36,13 @@ public class AdvertTypeService {
         }
     }
 
-    public String suppAdvertType(int id_typeProduct) {
-        if (advertTypeRepository.existsById(id_typeProduct)) {
-            Adverttype advertTypeToDelete = advertTypeRepository.getById(id_typeProduct);
+    public String suppAdvertType(int id_AdvertType) {
+        if (advertTypeRepository.existsById(id_AdvertType)) {
+            Adverttype advertTypeToDelete = advertTypeRepository.getById(id_AdvertType);
             advertTypeRepository.delete(advertTypeToDelete);
             return "Le typeProduct a était supprimer";
         } else {
-            return "Id " + id_typeProduct + " n'existe pas ou a deja était supprimer";
+            return "Id " + id_AdvertType + " n'existe pas ou a deja était supprimer";
         }
     }
 }

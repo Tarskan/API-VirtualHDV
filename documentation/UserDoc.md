@@ -7,9 +7,14 @@ Les user possèdent tous un id unique.
 ```json
 {
   "id_user": 1,
-  "name": "Nom + prenom de l'utilisateur",
+  "first_name": "prenom de l'utilisateur",
+  "last_name": "nom de l'utilisateur",
+  "adress": "adresse de l'utilisateur",
+  "city": "ville de l'utilisateur",
+  "email": "email de l'utilisateur",
   "pseudo": "Pseudo de l'utilisateur",
-  "password": "Mot de passe"
+  "password": "Mot de passe",
+  "url": "url de l'image de l'utilisateur"
 }
 ```
 
@@ -19,14 +24,9 @@ Pour récupérer une liste de user dans la base :</br>
 method : **[GET]**</br>
 url : `localhost:8081/api/user`</br>
 
-Pour récupérer un créneau dans la base :</br>
+Pour récupérer un user dans la base :</br>
 method : **[GET]**</br>
 url : `localhost:8081/api/user/{idDuUserSouhaiter}`</br>
-
-Pour récupérer un advertType dans la base à partir de son attribut name(la recherche
-partial est possible):</br>
-method : **[GET]**</br>
-url : `localhost:8081/api/user/{NameRechercher}`</br>
 
 Modifier intégralement un user l'id est requis afin de savoir le quel modifier</br>
 method : **[PUT]** </br>
@@ -34,10 +34,15 @@ url : `localhost:8081/api/user`</br>
 Body :</br>
 ```json
 {
-    "id_user": 1,
-    "name": "Nom + prenom de l'utilisateur",
+    "id_user": 1, 
+    "first_name": "prenom de l'utilisateur",
+    "last_name": "nom de l'utilisateur",
+    "adress": "adresse de l'utilisateur",
+    "city": "ville de l'utilisateur",
+    "email": "email de l'utilisateur",
     "pseudo": "Pseudo de l'utilisateur",
-    "password": "Mot de passe"
+    "password": "Mot de passe",
+    "url": "url de l'image de l'utilisateur"
 }
 ```
 
@@ -48,9 +53,14 @@ Body:</br>
 //Pas besoin de mettre d'id il est générer automatiquement</br>
 ```json
 {
-  "name": "Nom + prenom de l'utilisateur",
+  "first_name": "prenom de l'utilisateur",
+  "last_name": "nom de l'utilisateur",
+  "adress": "adresse de l'utilisateur",
+  "city": "ville de l'utilisateur",
+  "email": "email de l'utilisateur",
   "pseudo": "Pseudo de l'utilisateur",
-  "password": "Mot de passe"
+  "password": "Mot de passe",
+  "url": "url de l'image de l'utilisateur"
 }
 ```
 
