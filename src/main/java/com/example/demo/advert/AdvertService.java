@@ -116,6 +116,22 @@ public class AdvertService {
         }
     }
 
+    public List<Advert> listAllSellAdvert() {
+        List<Advert> allAdvert = advertRepository.findAll();
+        List<Advert> list = new ArrayList<Advert>();
+
+        for(var i=0; i<allAdvert.size(); i++){
+            if(allAdvert.get(i).getSoldto() != null) {
+                list.add(allAdvert.get(i));
+            }
+        }
+        if(list.size() >= 10) {
+            int cut = list.size() - 5;
+            list = list.subList(cut, list.size());
+        }
+        return list;
+    }
+
     public List<Advert> listBoughtAdvert(int id_user) {
         List<Advert> allAdvert = advertRepository.findAll();
         List<Advert> list = new ArrayList<Advert>();
@@ -189,4 +205,5 @@ public class AdvertService {
         Files.write(path, image);
         return path.toString();
     }
+
 }

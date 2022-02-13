@@ -43,6 +43,10 @@ base mais rechercher par nom d'annonce :</br>
 method : **[GET]**</br>
 url : `localhost:8081/api/advert/search/name/{nameAdvert}/without/{id_user}`</br>
 
+Retourne les 5 dernier produits vendu sur le site pour les affichés à l'accueil:</br>
+method : **[GET]**</br>
+url : `localhost:8081/api/advert/allsold`</br>
+
 Pour récupérer une liste d'advert dans la base à partir mais vendu par l'utilisateur:</br>
 method : **[GET]**</br>
 url : `localhost:8081/api/advert/sold/{id_user}`</br>

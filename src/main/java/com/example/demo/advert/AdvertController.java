@@ -41,6 +41,11 @@ public class AdvertController {
         return advertService.getAdvertByName(nameAdvert, id_user);
     }
 
+    @GetMapping("/allsold")
+    public List<Advert> listAllSellAdvert() {
+        return advertService.listAllSellAdvert();
+    }
+
     @GetMapping("/sold/{id_user}")
     public List<Advert> listSellAdvert(@PathVariable int id_user) {
         return advertService.listSellAdvert(id_user);
